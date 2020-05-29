@@ -61,7 +61,7 @@ jobs:
         REPO_URL: https://github.com/Lienol/openwrt op19
         REPO_BRANCH: dev-19.07
       run: |
-        git clone --depth 1 $REPO_URL -b $REPO_BRANCH openwrt
+        git clone -b dev-19.07 https://github.com/Lienol/openwrt openwrt
         cd openwrt
         
     - name: Update & Install feeds
